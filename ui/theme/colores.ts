@@ -1,8 +1,8 @@
 export const coloresBase = {
-    morado1: '#4226aa',
-    morado2: '#711cb3',
-    fondoMorado: '#e5deff',
-    rosado: '#d5479d',
+    musgo: '#0A0D04',
+    oliva: '#1A2209',
+    lima: '#C0F53D',
+    marfil: '#FAFFF3',
     gris900: '#333333',
     gris600: '#4b5563',
     blanco: '#ffffff',
@@ -11,11 +11,11 @@ export const coloresBase = {
 
 export const paletaMarca = {
     
-    principal: coloresBase.morado1,
-    secundario: coloresBase.morado2,
-    acento: coloresBase.rosado,
-    superficie: coloresBase.fondoMorado,
+    principal: coloresBase.lima,
+    secundario: coloresBase.oliva,
+    acento: coloresBase.marfil,
+    superficie: coloresBase.musgo,
     
-    textoPrincipal: coloresBase.gris900,
+    textoPrincipal: coloresBase.musgo,
     textoSecundario: coloresBase.gris600,
 };

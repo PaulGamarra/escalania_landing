@@ -38,7 +38,7 @@ export const tema = createTheme({
             secondary: paletaMarca.textoSecundario,
         },
         background: {
-            default: '#ffffff',
+            default: '#0A0D04',
         },
         marca: {
             principal: paletaMarca.principal,
