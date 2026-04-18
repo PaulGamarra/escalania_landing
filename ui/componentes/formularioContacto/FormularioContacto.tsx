@@ -120,14 +120,9 @@ export function FormularioContacto() {
         <>
             <Card
                 sx={{
-                    width: "100%",
-                    maxWidth: 620,
-                    mx: "auto",
-                    borderRadius: { xs: "28px", md: "36px" },
-                    backgroundColor: alpha(theme.palette.common.white, 0.04),
-                    border: `1px solid ${alpha(theme.palette.common.white, 0.12)}`,
+                    borderRadius: { xs: "2px", md: "20px" },
+                    backgroundColor: theme.palette.marca.principal,
                     boxShadow: "none",
-                    backdropFilter: "blur(10px)",
                 }}
             >
                 <Box
@@ -136,25 +131,11 @@ export function FormularioContacto() {
                         py: { xs: 3, md: 4 },
                     }}
                 >
-                    <Typography
-                        variant="h4"
-                        sx={{
-                            color: theme.palette.common.white,
-                            fontWeight: 800,
-                            mb: 1,
-                        }}
-                    >
+                    <Typography variant="h4" sx={{mb: 1}}>
                         Agenda una demostración
                     </Typography>
 
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            color: alpha(theme.palette.common.white, 0.72),
-                            mb: 4,
-                            maxWidth: 500,
-                        }}
-                    >
+                    <Typography variant="body1" sx={{mb: 4}}>
                         Déjanos tus datos y te contactaremos para mostrarte cómo un agente de IA puede atender a tus clientes por WhatsApp, Instagram y Facebook.
                     </Typography>
 
@@ -197,7 +178,8 @@ export function FormularioContacto() {
                             />
 
                             <BotonEnviarFormulario
-                                loading={loading || !formularioEsValido}
+                                loading={loading}
+                                disabled={loading || !formularioEsValido}
                             />
                         </Stack>
                     </Box>

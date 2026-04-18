@@ -11,7 +11,7 @@ export default function Header() {
     const theme = useTheme();
     
     return (
-        <Box sx={{py:{ xs: 6, md:8, lg: 12}, px:{ xs: 6, md:8, lg: 12}, background: theme.palette.marca.acento }}>
+        <Box sx={{py:{ xs: 6, md:8, lg: 12}, px:{ xs: 6, md:8, lg: 12}}}>
             <Container maxWidth="xl">
                     <Grid container spacing={6} sx={{ alignItems: "stretch" }}>
                         <Grid size={{ xs: 12, md:6, lg:7}}>
@@ -19,9 +19,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid size={{ xs: 12, md:6, lg:5}}>
-                            <CardCambiante colorBase={theme.palette.marca.principal} colorVisible={theme.palette.marca.superficie}>
-                                <FormularioContacto />
-                            </CardCambiante>
+                            <FormularioContacto />
                         </Grid>
                     </Grid>
             </Container>

@@ -3,7 +3,7 @@ export const tipografia = {
 
     h1: {
         fontSize: '3.5rem',
-        fontWeight: 700,
+        fontWeight: 800,
         lineHeight: 1.3,
         letterSpacing: '-0.02em',
     },

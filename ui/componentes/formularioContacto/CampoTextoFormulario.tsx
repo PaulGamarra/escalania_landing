@@ -33,29 +33,28 @@ export function CampoTextoFormulario({
             variant="outlined"
             sx={{
                 "& .MuiOutlinedInput-root": {
-                    borderRadius: "18px",
-                    backgroundColor: alpha(theme.palette.common.white, 0.04),
+                    borderRadius: "12px",
+                    backgroundColor: alpha(theme.palette.marca.secundario, 0.1),
                     color: theme.palette.common.white,
                     transition: "all 0.25s ease",
                     "& fieldset": {
-                        borderColor: alpha(theme.palette.common.white, 0.18),
+                        borderColor: theme.palette.marca.principal,
                     },
                     "&:hover fieldset": {
-                        borderColor: alpha(theme.palette.common.white, 0.4),
+                        borderColor: theme.palette.marca.principal
                     },
                     "&.Mui-focused fieldset": {
                         borderColor: theme.palette.marca.principal,
-                        borderWidth: "2px",
                     },
                 },
                 "& .MuiInputLabel-root": {
-                    color: alpha(theme.palette.common.white, 0.75),
+                    color: theme.palette.marca.secundario,
                 },
                 "& .MuiInputLabel-root.Mui-focused": {
-                    color: theme.palette.common.white,
+                    color: theme.palette.marca.secundario,
                 },
                 "& .MuiOutlinedInput-input": {
-                    color: theme.palette.common.white,
+                    color: theme.palette.marca.secundario,
                     py: 1.8,
                 },
             }}
