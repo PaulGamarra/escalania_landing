@@ -1,5 +1,3 @@
-// ui/componentes/formulario-contacto/BotonEnviarFormulario.tsx
-
 "use client";
 
 import Button from "@mui/material/Button";
@@ -8,12 +6,10 @@ import { alpha, useTheme } from "@mui/material/styles";
 
 interface PropsBotonEnviarFormulario {
     loading: boolean;
-    disabled?: boolean;
 }
 
 export function BotonEnviarFormulario({
     loading,
-    disabled = false,
 }: PropsBotonEnviarFormulario) {
     const theme = useTheme();
 
@@ -21,30 +17,37 @@ export function BotonEnviarFormulario({
         <Button
             type="submit"
             fullWidth
-            disabled={disabled}
+            disabled={loading}
             sx={{
                 mt: 1,
-                minHeight: 58,
+                minHeight: 64,
                 borderRadius: "999px",
                 textTransform: "none",
-                fontWeight: 800,
-                fontSize: "1rem",
+                fontWeight: 500,
+                fontSize: "1.2rem",
                 backgroundColor: theme.palette.marca.secundario,
-                color: '#fff',
+                color: "#fff",
                 boxShadow: "none",
                 transition: "transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease",
                 transform: "translateY(0)",
-                "&:hover": {
-                    backgroundColor: theme.palette.marca.secundario,
-                    transform: "translateY(-5px)",
+                "@media (hover: hover)": {
+                    "&:hover": {
+                        backgroundColor: theme.palette.marca.secundario,
+                        transform: "translateY(-5px)",
+                        boxShadow: `0 12px 24px ${alpha(theme.palette.marca.secundario, 0.28)}`,
+                    },
                 },
                 "&.Mui-disabled": {
-                    backgroundColor: alpha(theme.palette.marca.principal, 0.45),
-                    color: alpha(theme.palette.marca.superficie, 0.8),
+                    backgroundColor: alpha(theme.palette.marca.secundario, 0.55),
+                    color: "rgba(255,255,255,0.9)",
                 },
             }}
         >
-            {loading ? <CircularProgress size={24} /> : "Enviar"}
+            {loading ? (
+                <CircularProgress size={24} sx={{ color: "#fff" }} />
+            ) : (
+                "Enviar mensaje"
+            )}
         </Button>
     );
 }

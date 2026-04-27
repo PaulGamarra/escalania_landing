@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Box, Card, CardContent, Icon, Typography } from "@mui/material";
 import { useTheme, alpha } from "@mui/material/styles";
+import CornerCard from "../Cornercard";
 
 export interface PropsBeneficio {
     icono: string;
@@ -13,20 +14,20 @@ export interface PropsBeneficio {
 export function Beneficio({icono, titulo, subTitulo}: PropsBeneficio) {
     const theme = useTheme();
     return (
-        <Card
-            sx={{
+        <CornerCard cornerColor={theme.palette.marca.principal} variant="dot"
+            /*sx={{
                 backgroundColor: theme.palette.marca.superficie,
                 //borderRadius: 10,
                 boxShadow: "none",
                 width: "100%",
                 height: "100%",
-                border: `1px solid ${theme.palette.marca.principal}`,
+                border: `0.1px solid ${theme.palette.marca.principal}`,
                 transition: "transform 0.25s ease, box-shadow 0.25s ease",
                 transform: "translateY(0)",
                 "&:hover": {
                     transform: "translateY(-12px)",
                 },
-            }}
+            }}*/
         >
             <CardContent
                 sx={{
@@ -63,6 +64,6 @@ export function Beneficio({icono, titulo, subTitulo}: PropsBeneficio) {
                     </Typography>
                 </Box>
             </CardContent>
-        </Card>
+        </CornerCard >
     )
 }

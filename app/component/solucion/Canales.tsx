@@ -39,36 +39,12 @@ export default function Canales() {
             </Box>
 
             <Box sx={{ mb: 2 }}>
-                <Typography variant="h6">
+                <Typography variant="body1">
                     En Escalania implementamos un agente de IA entrenado para atender a tus clientes en tus canales principales: WhatsApp, Instagram, Facebook, etc.
                 </Typography>
-            </Box>
-
-            <Stack direction="row" spacing={1} sx={{ alignItems: 'flex-end', mb: 4}}>
-                <WhatsAppIcon fontSize="large" />
-                <FacebookOutlinedIcon fontSize="large"/>
-                <InstagramIcon fontSize="large"/>
-            </Stack>
-
-            <Box sx={{ mb: 2 }}>
-                <Typography variant="h4"
-                    sx={{
-                        display: "inline",
-                        backgroundImage: "linear-gradient(currentColor, currentColor)",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "0 100%",
-                        backgroundSize: "0% 4px",
-                        transition: "background-size 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
-
-                        "@media (hover: hover)": {
-                            "&:hover": {
-                                backgroundSize: "100% 4px",
-                            },
-                        },
-                    }}
-                >
+                <Typography variant="body1">
                     Tu agente puede:
-                </Typography>   
+                </Typography>
             </Box>
 
             <Box sx={{ width: '100%'}}>
@@ -78,7 +54,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                                 <ListItemIcon>
-                                    <ForwardIcon color="primary" fontSize="large"/>
+                                    <ForwardIcon color='secondary' fontSize="medium"/>
                                 </ListItemIcon>
                                 <Typography variant="body1">Responder preguntas frecuentes.</Typography>
                             </ListItemButton>
@@ -87,7 +63,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <ForwardIcon color="primary" fontSize="large"/>
+                                <ForwardIcon color="secondary" fontSize="medium"/>
                             </ListItemIcon>
                             <Typography variant="body1">Dar información sobre tus servicios.</Typography>
                             </ListItemButton>
@@ -96,7 +72,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                                 <ListItemIcon>
-                                    <ForwardIcon color="primary" fontSize="large"/>
+                                    <ForwardIcon color="secondary" fontSize="medium"/>
                                 </ListItemIcon>
                                 <Typography variant="body1">Resolver dudas de clientes potenciales.</Typography>
                             </ListItemButton>
@@ -105,7 +81,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <ForwardIcon color="primary" fontSize="large"/>
+                                <ForwardIcon color="secondary" fontSize="medium"/>
                             </ListItemIcon>
                             <Typography variant="body1">Agendar citas.</Typography>
                             </ListItemButton>
@@ -114,7 +90,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <ForwardIcon color="primary" fontSize="large"/>
+                                <ForwardIcon color="secondary" fontSize="medium"/>
                             </ListItemIcon>
                             <Typography variant="body1">Guiar conversaciones hacia la venta.</Typography>
                             </ListItemButton>
@@ -123,7 +99,7 @@ export default function Canales() {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <ForwardIcon color="primary" fontSize="large"/>
+                                <ForwardIcon color="secondary" fontSize="medium"/>
                             </ListItemIcon>
                             <Typography variant="body1">Mantener una atención rápida y profesional.</Typography>
                             </ListItemButton>

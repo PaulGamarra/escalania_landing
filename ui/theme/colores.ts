@@ -1,7 +1,7 @@
 export const coloresBase = {
     musgo: '#0A0D04',
     oliva: '#1A2209',
-    lima: '#C0F53D',
+    lima: '#d7df58', //'#C0F53D',
     marfil: '#FAFFF3',
     gris900: '#333333',
     gris600: '#4b5563',

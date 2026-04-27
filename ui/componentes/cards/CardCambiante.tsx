@@ -53,7 +53,7 @@ export function CardCambiante({
                 backgroundColor: estaVisible ? fondoVisible : fondoBase,
                 boxShadow: "none",
                 p: 2,
-                borderRadius: "40px",
+                borderRadius: "20px",
                 transition: "background-color 0.5s ease",
                 [theme.breakpoints.up("md")]: {
                     p: 8,
